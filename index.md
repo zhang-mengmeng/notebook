@@ -2,24 +2,32 @@
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
+title: 张萌的博客
+titleTemplate: Hi，终于等到你
+editLink: true
+lastUpdated: true
+
 hero:
-  name: "My Awesome Project"
-  text: "A VitePress Site"
-  tagline: My great project tagline
+  name: "张萌同学"
+  text: "passion."
+  tagline: 播种  破土  绽放 
+  image:
+      src: 微信图片_20250116224513.jpg
+      alt: 激情
   actions:
     - theme: brand
-      text: Markdown Examples
+      text: 进入主页
       link: /markdown-examples
     - theme: alt
-      text: API Examples
+      text: 个人成长
       link: /api-examples
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - icon: 🖖
+    details: 每一行代码的书写，都是对知识的不断积累。
+  - icon: 🛠
+    details: 每一次解决问题，都是对思维的突破与升华。
+  - icon: 💓
+    details: 当代码顺利运行时，那是我成长的最美体现。
 ---
 
