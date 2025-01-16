@@ -12,7 +12,7 @@ hero:
   text: "passion."
   tagline: 播种  破土  绽放 
   image:
-      src: 微信图片_20250116224513.jpg
+      src: https://github.com/zhang-mengmeng/notebook/blob/main/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20250116224513.jpg?raw=true
       alt: 激情
   actions:
     - theme: brand
