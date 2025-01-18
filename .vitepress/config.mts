@@ -23,13 +23,13 @@ export default defineConfigWithTheme({
 
     sidebar: sidebar,
     // 最后修改时间
-    lastUpdated:{
-      text:'最后更改时间',
-      formatOptions:{
-        dateStyle:'full',
-        timeStyle:'short'
-      }
-    },
+    // lastUpdated:{
+    //   text:'最后更改时间',
+    //   formatOptions:{
+    //     dateStyle:'full',
+    //     timeStyle:'short'
+    //   }
+    // },
     // 搜索
     search:{
       provider:"local"

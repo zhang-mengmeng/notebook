@@ -5,14 +5,14 @@ export const nav: DefaultTheme.NavItem[] = [
     link: '/' // 表示docs/index.md
   },
   {
-    text: '个人成长',
+    text: '前端',
     items: [
       {
-        text: '大江南北游记',
-        link: '/column/Travel/' // 表示docs/column/Travel/index.md
+        text: 'HTML-CSS',
+        link: '/front/encountering/' // 表示docs/column/Travel/index.md
       },
       {
-        text: '所思·所想',
+        text: '常见JavaScript',
         link: '/column/Growing/' // 表示docs/column/Growing/index.md
       }
     ]
@@ -77,6 +77,22 @@ export const sidebar: DefaultTheme.Sidebar = {
           }
         ]
       }
+    ],
+    // 前端开发
+    '/front/encountering/':[
+      {
+        text: 'HTML和CSS',
+        items: [
+          {
+            text: 'HTML',
+            link: '/front/encountering/page.md'
+          },
+        //   {
+        //     text: '队列-事件循环',
+        //     link: '/column/Algorithm/002_Queue'
+        //   }
+        ]
+      },
     ]
   };
   
