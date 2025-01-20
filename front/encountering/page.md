@@ -1,3 +1,7 @@
+---
+outline: deep
+---
+
 # 邂逅 HTML
 
 ## 完整的 HTML 结构
@@ -125,4 +129,13 @@
    ○ URI = Uniform Resource Identifier 统一资源标识符，用于标识Web技术使用的逻辑或物理资源
 
    ○ URL = Uniform Resource Locator 统一资源定位符，俗称网络地址，相当于网络中的门牌号
+
+## 元素语义化
+
+  - 方便代码维护
+  - 减少开发者之间的沟通成本
+  - 能让语音合成工具正确识别网页元素的用途，做出正确的反应
+  - 有利于SEO
+  - ......
+
  

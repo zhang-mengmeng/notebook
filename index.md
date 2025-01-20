@@ -10,7 +10,7 @@ lastUpdated: true
 hero:
   name: "张萌同学"
   text: "passion."
-  tagline: 播种  破土  绽放 
+  tagline: 风吹树响是生命的歌，是木讷的我。 
   image:
       src: https://github.com/zhang-mengmeng/notebook/blob/main/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20250116224513.jpg?raw=true
       alt: 激情

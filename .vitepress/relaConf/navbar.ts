@@ -87,10 +87,10 @@ export const sidebar: DefaultTheme.Sidebar = {
             text: 'HTML',
             link: '/front/encountering/page.md'
           },
-        //   {
-        //     text: '队列-事件循环',
-        //     link: '/column/Algorithm/002_Queue'
-        //   }
+          {
+            text: 'CSS',
+            link: '/front/encountering/style.md'
+          }
         ]
       },
     ]
