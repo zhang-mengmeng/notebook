@@ -81,3 +81,53 @@ CSS 的出现是为了美化 HTML 的，并且让结构(HTML)与样式(CSS)分�
 - a:visited 已访问的链接
 - a:hover  鼠标挪动到连接上
 - a:active 激活的连接
+
+## 块级元素水平居中
+ 
+ block box width = width + padding + border + margin
+
+### 伪元素
+- ::first-line 可以针对首行文本设置属性
+- ::first-letter 可以针对首字母设置属性
+- ::before  可以在元素内容前插入内容
+- ::after 可以在元素内容后插入内容
+
+## 继承
+
+### inherit 继承父元素的属性
+
+## 选择器权重 
+- !important 10000
+- 内联样式 1000
+- id选择器 100
+- 类选择器、伪类选择器、属性选择器 10
+- 元素选择器、伪元素选择器 1
+- 通配符选择器、子选择器、相邻选择器、同胞选择器 0
+
+## CSS属性 - display
+- block 让元素显示为块级元素
+- inline 让元素显示为行内元素
+- inline-block 让元素同时具备行内元素和块级元素的特性
+- none 让元素不显示
+
+## 元素隐藏方法
+- display: none;
+  - 元素不显示出来，并且也不占据位置，不占据任何空间
+- visibility：hidden
+  - 设置为hidden，虽然元素不可见，但是会占据元素应该占据的空间
+  - 默认为visible，元素是可见的
+- rgba设置颜色，将a的值设置为0  
+  - rgba的a设置的是alpha值，可以设置透明度，不影响子元素
+- opacity设置透明度，设置为0
+  - 设置整个元素的透明度，会影响所有的子元素
+
+## margin的传递
+- margin-top传递
+  - 如果块级元素的顶部线和父元素的顶部线重叠，那么这个快递元素的margin-top值会传递给父元素
+- margin-bottom传递
+  - 如果块级元素的底部线和父元素的底部线重叠，并且父元素的高度是auto，那么这个块级元素的margin-bottom值会传递给父元素
+- 如何防止出现传递问题
+  - 给父元素设置padding-top或者padding-bottom
+  - 给父元素设置border
+  - 触发BFC:给父元素设置overflow:hidden
+
