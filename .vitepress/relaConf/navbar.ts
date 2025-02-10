@@ -90,6 +90,10 @@ export const sidebar: DefaultTheme.Sidebar = {
           {
             text: 'CSS',
             link: '/front/encountering/style.md'
+          },
+          {
+            text:'flex布局',
+            link:'/front/encountering/flex.md'
           }
         ]
       },
