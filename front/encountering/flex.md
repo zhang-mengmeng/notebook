@@ -40,7 +40,39 @@
 - **flex-wrap**
   - nowrap(默认)：单行
   - wrap：多行
-  - wrap：多行(对比 wrap cross start与cross end 相反)
+  - wrap-reverse：多行(对比 wrap cross start与cross end 相反)
 - **flex-flow**
   - flex-flow属性是flex-direction 和 flex-wrap 的简写 顺序任何，并且都可以省略
+- **justify-content**
+  - 决定了 flex items 在 main axis 上的对齐方式
+  - flex-start(默认值)：与 main start 对其
+  - flex-end：与 main end 对齐
+  - center：居中对齐
+  - space-between：flex items 之间的距离相等 与 main start、main end两端对齐
+  - space-around：flex items 之间的距离相等 与 main start、main end 之间的距离是flex items 之间距离的一半
+  - space-evenly：flex items 之间的距离相等 与 main start、main end 之间的距离 等于 flex items 之间的距离
+- **align-item**
+  - 决定了 flex items 在 cross axis 上的对齐方式
+  - normal：在弹性布局中，效果和stretch一样
+  - stretch：当 flex items 在 cross axis 方向的 size 为 auto 时，会自动拉伸至填充 flex container
+  - flex-start：与 cross start 对齐
+  - flex-end：与 cross end 对齐
+  - center：居中对齐
+  - baseline：与基线对齐
+- **align-content**
+  - 决定了对行 flex items 在 cross axis 上的对齐方式，
+  - stretch(默认值)：与 align-items 的 stretch 类似
+  - flex-start：与cross start 对齐
+  - flex-end：cross end 对齐
+  - center：居中对齐
+  - space-between：flex items 之间的距离相等 与 cross start、cross end两端对齐
+  - space-around：flex items 之间的距离相等 与 cross start、cross end 之间的距离是 flex items 之间距离的一半
+  - space-evenly：flex items 之间的距离相等 与 cross start、cross end 之间的距离等于 flex items 之间的距离
 #### 应用在flex items 上的css属性
+- **order**
+  - 决定了 flex items 的排布顺序 可以设置任意整数 值越小就越排在前面
+- **align-self**
+  -  auto(默认值)：遵从 flex container 的 align-items 设置
+  - stretch、flex-start、flex-end、center、baseline、效果跟 align-items 一致
+- **flex-grow**
+  - 决定了 flex items 如何扩展
