@@ -76,3 +76,4 @@
   - stretch、flex-start、flex-end、center、baseline、效果跟 align-items 一致
 - **flex-grow**
   - 决定了 flex items 如何扩展
+  - 可以设置任意非数字

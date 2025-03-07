@@ -9,7 +9,7 @@ import escookConfig from '@escook/vitepress-theme/config'
 export default defineConfigWithTheme({
   // 3. 通过 extends 指定要继承的配置
   extends: escookConfig,
-  title: "小张的笔记本",
+  title: "张萌的笔记本",
 
   description: "A VitePress Site",
   outDir:"docs",

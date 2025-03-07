@@ -5,16 +5,20 @@ export const nav: DefaultTheme.NavItem[] = [
     link: '/' // 表示docs/index.md
   },
   {
-    text: '前端',
+    text: '前端基础',
     items: [
       {
-        text: 'HTML-CSS',
+        text: 'HTML',
         link: '/front/encountering/' // 表示docs/column/Travel/index.md
       },
       {
-        text: '常见JavaScript',
-        link: '/column/Growing/' // 表示docs/column/Growing/index.md
-      }
+        text: 'CSS',
+        link: '/front/css/' // 表示docs/column/Travel/index.md
+      },
+      {
+        text: 'JavaScript',
+        link: '/front/javascript/function.md' // 表示docs/column/Travel/index.md
+      },
     ]
   },
   {
@@ -81,7 +85,7 @@ export const sidebar: DefaultTheme.Sidebar = {
     // 前端开发
     '/front/encountering/':[
       {
-        text: 'HTML和CSS',
+        text: 'HTML',
         items: [
           {
             text: 'HTML',
@@ -97,6 +101,52 @@ export const sidebar: DefaultTheme.Sidebar = {
           }
         ]
       },
+    ],
+    '/front/css/':[
+      {
+        text: 'css样式',
+        items: [
+          {
+            text: 'HTML',
+            link: '/front/encountering/page.md'
+          },
+          {
+            text: 'CSS',
+            link: '/front/encountering/style.md'
+          },
+          {
+            text:'flex布局',
+            link:'/front/encountering/flex.md'
+          }
+        ]
+      },
+    ],
+    // javascript
+    '/front/javascript/':[
+      {
+        text: 'JavaScript基础',
+        items: [
+          {
+            text: '函数',
+            link: '/front/javascript/function.md'
+          },
+          {
+            text: '对象',
+            link: '/front/javascript/object.md'
+          },
+          {
+            text:'DOM',
+            link:'/front/javascript/dom.md'
+          },
+          {
+            text:'BOM',
+            link:'/front/javascript/bom.md'
+          }
+        ]
+      },
+      {
+        text: 'JavaScript高级',
+      }
     ]
   };
   
