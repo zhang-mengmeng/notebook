@@ -135,6 +135,14 @@ export const sidebar: DefaultTheme.Sidebar = {
             link: '/front/javascript/object.md'
           },
           {
+            text: '内置类',
+            link: '/front/javascript/class.md'
+          },
+          {
+            text: '数组',
+            link: '/front/javascript/array.md'
+          },
+          {
             text:'DOM',
             link:'/front/javascript/dom.md'
           },
