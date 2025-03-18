@@ -85,3 +85,59 @@ names.splice(0, 3)
 var names = ['abc', 'cba', 'nba']
 names.splice(1, 1, 'kobe', 'james')
 ```
+
+### length属性
+
+- length属性是可写的
+- 如果我们`手动增加一个大于默认length的数值`，那么`会增加数组的长度`
+- 如果我们`减少它，数组就会被截断`
+- 清空数组的方法就是`arr.length = 0`
+
+### 数组遍历
+
+#### 普通的for循环
+```js
+for (var i = 0; i < names.length; i++) {
+  console.log(names[i])
+}
+```
+#### for...in
+```js
+for (var index in names) {
+  console.log(index, names[index])
+}
+```
+
+#### for...of
+```js
+for (var item of names) {
+  console.log(item)
+}
+```
+
+### 数组方法
+#### slice
+`用于对数组进行截取`
+```js
+// slice方法: 不会修改原数组
+// start: 从什么位置开始
+// end: 结束位置，不包含end本身
+var newNames = names.slice(2, 4)
+```
+#### concat
+`创建一个新数组，其中包含来自于其他数组和其他项的值`
+```js
+var names1 = ['abc', 'cba']
+var names2 = ['nba', 'mba']
+var names3 = ['zzm', 'koba']
+var newNames = names1.concat(names2, names3, "zhang")
+console.log(newNames)
+```
+#### join
+`将一个数组的所有元素连接成一字字符串并返回这个字符串`
+```js
+var names = ['abc', 'cba', 'nba', 'mba']
+console.log(names.join("^"))
+```
+
+### 查找数组中的元素
