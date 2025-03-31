@@ -154,6 +154,12 @@ export const sidebar: DefaultTheme.Sidebar = {
       },
       {
         text: 'JavaScript高级',
+        items: [
+          {
+            text: '浏览器的渲染原理',
+            link: '/front/javascript/rendering.md'
+          },
+        ]
       }
     ]
   };
