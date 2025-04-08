@@ -159,6 +159,14 @@ export const sidebar: DefaultTheme.Sidebar = {
             text: '浏览器的渲染原理',
             link: '/front/javascript/rendering.md'
           },
+          {
+            text: 'JavaScript的执行原理',
+            link: '/front/javascript/execute.md'
+          },
+          {
+            text: '面向对象原型继承',
+            link: '/front/javascript/inherit.md'
+          },
         ]
       }
     ]
