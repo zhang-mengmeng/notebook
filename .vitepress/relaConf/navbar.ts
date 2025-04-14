@@ -164,6 +164,10 @@ export const sidebar: DefaultTheme.Sidebar = {
             link: '/front/javascript/execute.md'
           },
           {
+            text: 'JavaScript的函数增强',
+            link: '/front/javascript/fnenhance.md'
+          },
+          {
             text: '面向对象原型继承',
             link: '/front/javascript/inherit.md'
           },
