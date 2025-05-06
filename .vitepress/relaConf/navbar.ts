@@ -156,6 +156,10 @@ export const sidebar: DefaultTheme.Sidebar = {
         text: 'JavaScript高级',
         items: [
           {
+            text: 'this的指向',
+            link: '/front/javascript/this.md'
+          },
+          {
             text: '浏览器的渲染原理',
             link: '/front/javascript/rendering.md'
           },
