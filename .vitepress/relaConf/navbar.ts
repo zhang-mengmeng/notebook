@@ -124,7 +124,7 @@ export const sidebar: DefaultTheme.Sidebar = {
     // javascript
     '/front/javascript/':[
       {
-        text: 'JavaScript基础',
+        text: 'JavaScript基础12312',
         items: [
           {
             text: '函数',
@@ -153,7 +153,7 @@ export const sidebar: DefaultTheme.Sidebar = {
         ]
       },
       {
-        text: 'JavaScript高级',
+        text: 'JavaScript高级123',
         items: [
           {
             text: '张萌',

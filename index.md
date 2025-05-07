@@ -2,13 +2,13 @@
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
-title: 张萌的博客
+title: 张萌的博客3213
 titleTemplate: Hi，终于等到你
 editLink: true
 lastUpdated: true
 
 hero:
-  name: "张萌同学"
+  name: "张萌同学21312"
   text: "passion."
   tagline: 热情和欲望可以突破一切难关。 
   image:
