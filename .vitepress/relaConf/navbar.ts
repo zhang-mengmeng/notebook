@@ -157,7 +157,7 @@ export const sidebar: DefaultTheme.Sidebar = {
         items: [
           {
             text: 'this的指向',
-            link: '/front/javascript/this.md'
+            link: '/front/javascript/zzm.md'
           },
           {
             text: '浏览器的渲染原理',
