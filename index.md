@@ -8,7 +8,7 @@ editLink: true
 lastUpdated: true
 
 hero:
-  name: "张萌同学21312"
+  name: "张萌同学"
   text: "passion."
   tagline: 热情和欲望可以突破一切难关。 
   image:

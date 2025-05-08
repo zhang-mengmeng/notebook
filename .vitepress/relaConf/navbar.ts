@@ -153,15 +153,11 @@ export const sidebar: DefaultTheme.Sidebar = {
         ]
       },
       {
-        text: 'JavaScript高级123',
+        text: 'JavaScript高级',
         items: [
           {
-            text: '张萌',
-            link: '/front/javascript/ces.md'
-          },
-          {
-            text: '函数的指向',
-            link: '/front/javascript/functionT.md'
+            text: '函数中this指向',
+            link: '/front/javascript/this.md'
           },
           {
             text: '浏览器的渲染原理',

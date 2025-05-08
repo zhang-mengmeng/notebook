@@ -1,5 +1,5 @@
 
-
+# this
 ## 认识 this
 
 - 函数在调用时，JavaScript 会默认给 this 绑定一个值
