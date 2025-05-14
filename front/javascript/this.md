@@ -1,5 +1,5 @@
-
 # this
+
 ## 认识 this
 
 - 函数在调用时，JavaScript 会默认给 this 绑定一个值
@@ -281,9 +281,198 @@ var obj2 = {
 };
 (obj2.foo = obj.foo)();
 ```
+
 ## 箭头函数(ES6)
+
 ### 认识箭头函数
-箭头函数是ES6之后增加的一种编写函数的方法，并且它比函数表达式要更加简洁
+
+箭头函数是 ES6 之后增加的一种编写函数的方法，并且它比函数表达式要更加简洁
 
     箭头函数不会绑定this、arguments属性
     箭头函数不能作为构造函数来使用
+
+### 箭头函数的优化
+
+1. 如果只有一个参数，小括号可以省略
+
+```js
+var names = ["nba", "abc", "cba"];
+var namess = names.forEach((item) => {
+  console.log("item", item);
+});
+```
+
+2. 如果表达式只有一行代码，可以省略大括号
+
+```js
+var names = ["nba", "abc", "cba"];
+var namess = names.forEach((item) => console.log("item", item));
+```
+
+3. 如果表达式只有一行代码，那么这行代码的返回值将作为整个函数的返回值进行返回
+
+```js
+var numbers = [10, 20, 30, 40];
+var number = numbers.filter((item) => item % 2 == 0);
+```
+
+4. 如果箭头函数默认返回一个对象，要添加小括号
+
+```js
+var obj = () => ({ name: "mm" });
+```
+
+### 箭头函数的应用
+
+```js
+function request(url, callbackFn) {
+  var results = ["abc", "bac", "cba"];
+  callbackFn(results);
+}
+
+var obj = {
+  names: [],
+  network: function () {
+    request("/names", (res) => {
+      this.names = [].concat(res);
+    });
+  },
+};
+
+obj.network();
+
+console.log(obj.names);
+```
+
+### this 面试题
+
+```js
+var name = "window";
+
+var person = {
+  name: "person",
+  sayName: function () {
+    console.log(this.name);
+  },
+};
+
+var obj = {
+  name: "mm",
+};
+
+function sayName() {
+  var sss = person.sayName;
+  sss(); // window
+  person.sayName(); // person
+  person.sayName(); // person
+  (b = person.sayName)(); // window
+  (obj.foo = person.sayName)();
+  obj.foo();
+}
+
+sayName();
+```
+
+```js
+var name = "window";
+var person1 = {
+  name: "person1",
+  foo1: function () {
+    console.log(this.name);
+  },
+  foo2: () => console.log(this.name),
+  foo3: function () {
+    return function () {
+      console.log(this.name);
+    };
+  },
+  foo4: function () {
+    return () => {
+      console.log(this.name);
+    };
+  },
+};
+
+var person2 = { name: "person2" };
+
+person1.foo1(); // 隐式绑定 person1
+person1.foo1.call(person2); // 显示绑定 person2
+
+person1.foo2(); // 没有this去上层作用域查找 window
+person1.foo2.call(person2); // window
+
+person1.foo3()(); // 默认调用 window
+person1.foo3.call(person2)(); // 默认调用 window
+person1.foo3().call(person2); // 显示绑定 person2
+
+person1.foo4()(); // person1
+person1.foo4.call(person2)(); // person2
+person1.foo4().call(person2); // person1
+```
+
+```js
+var name = "window";
+
+function Person(name) {
+  this.name = name;
+  this.foo1 = function () {
+    console.log(this.name);
+  };
+  this.foo2 = () => console.log(this.name);
+  this.foo3 = function () {
+    return function () {
+      console.log(this.name);
+    };
+  };
+  this.foo4 = function () {
+    return () => console.log(this.name);
+  };
+}
+var person1 = new Person("person1");
+var person2 = new Person("person2");
+person1.foo1(); //  person1
+person1.foo1.call(person2); // person2
+
+person1.foo2(); // person1
+person1.foo2.call(person2); // person1
+
+person1.foo3()(); // window
+person1.foo3.call(person2)(); // window
+person1.foo3().call(person2); // person2
+
+person1.foo4()(); // person1
+person1.foo4.call(person2)(); // person2
+person1.foo4().call(person2); // person1
+```
+
+```js
+var name = "window";
+
+function Person(name) {
+  this.name = name;
+  this.obj = {
+    name: "obj",
+    foo1: function () {
+      return function () {
+        console.log(this.name);
+      };
+    },
+    foo2: function () {
+      return () => {
+        console.log(this.name);
+      };
+    },
+  };
+}
+
+var person1 = new Person("person1");
+var person2 = new Person("person2");
+
+person1.obj.foo1()(); // window
+person1.obj.foo1.call(person2)(); // window
+person1.obj.foo1().call(person2); // person2
+
+person1.obj.foo2()(); // obj
+person1.obj.foo2.call(person2)(); // person2
+person1.obj.foo2().call(person2); // obj
+```
