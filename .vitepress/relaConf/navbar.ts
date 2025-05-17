@@ -9,7 +9,7 @@ export const nav: DefaultTheme.NavItem[] = [
     items: [
       {
         text: 'HTML',
-        link: '/front/encountering/' // 表示docs/column/Travel/index.md
+        link: '/front/encountering/indexA.md' // 表示docs/column/Travel/index.md
       },
       {
         text: 'CSS',
@@ -85,6 +85,23 @@ export const sidebar: DefaultTheme.Sidebar = {
     // 前端开发
     '/front/encountering/':[
       {
+        text: '软件开发-HTML结构-元素刨析',
+        items: [
+          {
+            text: '软件开发',
+            link: '/front/encountering/indexA.md'
+          },
+          {
+            text: 'HTML',
+            link: '/front/encountering/page.md'
+          },
+          {
+            text:'flex布局',
+            link:'/front/encountering/flex.md'
+          }
+        ]
+      },
+            {
         text: 'HTML',
         items: [
           {
