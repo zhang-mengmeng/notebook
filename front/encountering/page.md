@@ -6,13 +6,15 @@ outline: deep
 
 ## 完整的 HTML 结构
 
+### 文档声明
+
 - <! DOCTYPE html>
 
   ○ HTML 文档声明，告诉浏览器当前页面是 HTML5 页面
 
   ○ 必须放在 HTML 文档最前面，不能省略，省略了会出现兼容性问题。
 
-- html 元素
+### html元素
 
   ○ 表示一个 HTML 文档的根元素，其他元素必须是此元素的后代
 
@@ -22,8 +24,7 @@ outline: deep
   2. 帮助翻译工具确定要使用的翻译规则
 
   :::
-
-- head 元素(元数据)
+### head 元素(元数据)
 
   ○ 规定文档相关的配置信息，包括文档的标题，引用文档样式和脚本等。
   
@@ -33,15 +34,18 @@ outline: deep
     ○ 网页的标题
   * meta 元素
 
-    ○ 可以设置网页的字符编码
+    ○ 通过charset可以设置网页的字符编码
 
   :::
 
-* body元素
 
-  ○ 网页的具体内容和结构
+### body元素
+○ 网页的具体内容和结构
 
-## img元素 (可替换元素)
+#### h元素
+#### p元素
+
+#### img元素 (可替换元素)
   
   ○ src属性(必须)属性包含了想嵌入的图片的文件路径
   
@@ -59,7 +63,7 @@ outline: deep
 
   :::
 
-## a元素
+#### a元素
 
  * href: Hypertext Reference的简称
    
@@ -76,16 +80,22 @@ outline: deep
     ○ _parent:在父窗口打开URL
 
     ○ _top:在顶级窗口打开URL
+
+  * 本页面的锚点链接
+  * 下载文件
+  * 打开发送邮件软件
   
-## iframe元素
+#### iframe元素
 
  - frameborder属性：设置边框 0 不显示边框 1 显示边框
 
     ○ _parent:在父窗口打开URL
 
     ○ _top:在顶级窗口打开URL
+  
+ - 某些网页禁止嵌套 <mark>x-frame-options: SAMEORIGIN</mark>
 
-
+#### div元素 span元素
 ::: danger HTML中特殊的元素 div  span  
 * 作用
  
@@ -98,14 +108,20 @@ outline: deep
   ○ span元素 用于区分特殊文本和普通文本，用来显示一些关键字
 :::
 
-## HTML全局属性
+### 不常用的元素
+#### storng元素
+#### i元素
+#### code元素
+#### br元素
+
+### HTML全局属性
 
 - id 定义唯一的标识符，在连接，脚本或样式时标识元素
 - class 以空格分隔的元素的类名列表，它允许css和javascript通过类选择器或者DOM方法来选择和访问特定的元素
 - style 给元素添加内联样式
 - title 表示元素相关信息的文本
 
-## 字符实体
+### 字符实体
 
 - HTML实体是以一段以连字号(&)开头、以分号( ; )、结尾的文本
   
@@ -116,7 +132,7 @@ outline: deep
   ○  &gt  大于号
 
 
-## URL 统一资源定位符
+### URL 统一资源定位符
 
  - URL的标准格式
 
